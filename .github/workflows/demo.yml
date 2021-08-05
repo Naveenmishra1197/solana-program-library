@@ -17,13 +17,13 @@ jobs :
       - name: Use Node.js node
         uses: actions/setup-node@v2
         with:
-          node-version : 'lts/*'
+          node-version : '12.x'
 
       - name: "Build Docs"
         if: ${{ github.event_name == 'push' && 'pull_request'&& github.ref == 'refs/heads/master'}}
 #       - name: "Build Docs"
         run : |
-          sudo .travis/affects.sh docs/ .travis 
+          sudo .travis/affects.sh docs/ .travis || travis_terminate 0 
           sudo cd docs/
           sudo source .travis/before_install.sh
           npm ci
