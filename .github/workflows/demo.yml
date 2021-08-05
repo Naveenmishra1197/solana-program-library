@@ -25,5 +25,8 @@ jobs :
           sudo .travis/affects.sh docs/ .travis || travis_terminate 0
           sudo cd docs/
           sudo source .travis/before_install.sh
-          sudo source .travis/script.sh
+      - name : script
+        run : |
+           npm ci
+           sudo source .travis/script.sh
 
