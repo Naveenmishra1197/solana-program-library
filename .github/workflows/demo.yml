@@ -1,0 +1,29 @@
+name: node_js
+
+on:
+  push:
+    branches:  [master]
+  pull_request:
+    branches:  [master]
+  
+jobs :
+  build :
+    runs-on: Ubuntu-18.04 lts
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Use Node.js node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 'node'
+
+      - name: "Build Docs"
+        if: type IN (push, pull_request) && branch = master
+      - name: "Build Docs"
+        run : |
+          sudo .travis/affects.sh docs/ .travis || travis_terminate 0
+          sudo cd docs/
+          sudo source .travis/before_install.sh
+          sudo source .travis/script.sh
+
