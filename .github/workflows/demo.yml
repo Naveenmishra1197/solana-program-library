@@ -20,7 +20,7 @@ jobs :
           node-version: 'node'
 
       - name: "Build Docs"
-        if: github.event_name == 'push' && 'pull_request'&& branch== 'master'
+        if: ${{ github.event_name == 'push' && 'pull_request'&& github.ref == 'refs/heads/master'}}
 #       - name: "Build Docs"
         run : |
           sudo .travis/affects.sh docs/ .travis || travis_terminate 0
