@@ -27,7 +27,7 @@ jobs :
           sudo cd docs/
           sudo source .travis/before_install.sh
           npm ci
-          source .travis/script.sh
+          sudo source .travis/script.sh
 #       - name : script
 #         run : |
              #    || travis_terminate 0 
