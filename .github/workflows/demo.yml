@@ -9,7 +9,7 @@ on:
 jobs :
   build :
     name : mybuilddemo
-    runs-on: Ubuntu-18.04 lts
+    runs-on: Ubuntu-18.04 
     
     steps:
       - name: Checkout repository
