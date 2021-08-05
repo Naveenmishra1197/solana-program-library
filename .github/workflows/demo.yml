@@ -21,7 +21,7 @@ jobs :
 
       - name: "Build Docs"
         if: type IN (push, pull_request) && branch = master
-      - name: "Build Docs"
+#       - name: "Build Docs"
         run : |
           sudo .travis/affects.sh docs/ .travis || travis_terminate 0
           sudo cd docs/
