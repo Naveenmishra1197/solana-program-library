@@ -5,6 +5,10 @@ on:
     branches:  [master]
   pull_request:
     branches:  [master]
+# env:
+#    notification :
+#                email: false
+
   
 jobs :
   build :
@@ -17,13 +21,13 @@ jobs :
       - name: Use Node.js node
         uses: actions/setup-node@v2
         with:
-          node-version : '12.x'
+          node-version : 'node'
 
       - name: "Build Docs"
         if: ${{ github.event_name == 'push' && 'pull_request'&& github.ref == 'refs/heads/master'}}
 #       - name: "Build Docs"
         run : |
-          .travis -- affects.sh -- docs/.travis || travis_terminate 0 
+          .travis -- affects.sh -- docs -- .travis || travis_terminate 0 
           cd docs/
           source .travis/before_install.sh
           npm ci
