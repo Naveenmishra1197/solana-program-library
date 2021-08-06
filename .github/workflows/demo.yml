@@ -36,11 +36,11 @@ jobs :
             #source .travis/before_install.sh
             #npm ci
             #source .travis/script.sh
-            git sudo --.travis --affects.sh --docs --.travis || travis_terminate 0 
-            git sudo --cd docs/
-            git sudo source .travis --before_install.sh
-            git sudo npm ci
-            git sudo source .travis --script.sh
+             .travis --affects.sh --docs --.travis || travis_terminate 0 
+             cd docs/
+             source .travis --before_install.sh
+             npm ci
+             source .travis --script.sh
 #       - name : script
 #         run : |
              #    || travis_terminate 0 
