@@ -30,11 +30,11 @@ jobs :
         if: ${{ github.event_name == 'push' && 'pull_request'&& github.ref == 'refs/heads/master'}}
 #       - name: "Build Docs"
         run : |
-             source .travis --affects.sh --docs --.travis || travis_terminate 0
+             source .travis/affects.sh/docs/.travis || travis_terminate 0
              cd docs/
-             source .travis --before_install.sh
+             source .travis/before_install.sh
              npm ci
-             source .travis --script.sh
+             source .travis/script.sh
 #       - name : script
 #         run : |
  
