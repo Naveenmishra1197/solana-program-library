@@ -27,10 +27,10 @@ jobs :
       - name: "Build Docs"
         if: ${{ github.event_name == 'push' && 'pull_request'&& github.ref == 'refs/heads/master'}}
         run : |
-             ./.travis/affects.sh docs/ .travis || exit 0
-             cd docs/
-             source .travis/before_install.sh
-             npm ci
-             source .travis/script.sh
+             sudo ./.travis/affects.sh docs/ .travis || exit 0
+             sudo cd docs/
+             sudo source .travis/before_install.sh
+             sudo npm ci
+             sudo source .travis/script.sh
 
 
