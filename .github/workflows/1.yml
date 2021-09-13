@@ -1,5 +1,6 @@
 on: |
   push
+    branches: only-master
   pull_request
     branches: only-master
 
