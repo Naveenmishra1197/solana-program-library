@@ -1,8 +1,10 @@
 on: |
   push
-    branches: only-master
+    branches: 
+      - only-master
   pull_request
-    branches: only-master
+    branches: 
+      - only-master
 
 jobs:
   build: 
