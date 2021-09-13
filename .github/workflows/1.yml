@@ -13,6 +13,6 @@ jobs:
           .travis/affects.sh docs/ .travis || travis_terminate 0
           cd docs/
           source .travis/before_install.sh
-        if: github.event_name = (push OR pull_request) AND branch = master
+        if: ${{ github.event_name = ('push' OR 'pull_request')}} AND ${{branch = master}}
         name: "Build Docs"
       - run: source .travis/script.sh
