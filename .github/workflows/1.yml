@@ -15,6 +15,7 @@ jobs:
       - run: |
          cd docs/
          source .travis/before_install.sh
+         npm ci
          source .travis/script.sh
         if: ${{ github.event_name == ('push' || 'pull_request')}} && ${{github.ref == 'master'}}
         name: "changing the directory to /docs"
