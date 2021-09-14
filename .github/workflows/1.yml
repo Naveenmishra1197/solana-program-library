@@ -12,12 +12,12 @@ jobs:
       - run: .travis/affects.sh docs/ .travis || exit 0
         if: ${{ github.event_name == ('push' || 'pull_request')}} && ${{github.ref == 'master'}}
         name: "Build Docs"
-      - run: |
+      - run: >
          cd docs/
          source .travis/before_install.sh
         if: ${{ github.event_name == ('push' || 'pull_request')}} && ${{github.ref == 'master'}}
         name: "changing the directory to /docs"
-      - run: |
+      - run: >
          cd docs/
          source .travis/script.sh
         name: "running the .travis/script.sh"
