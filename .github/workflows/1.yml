@@ -13,8 +13,8 @@ jobs:
         if: ${{ github.event_name == ('push' || 'pull_request')}} && ${{github.ref == 'master'}}
         name: "Build Docs"
       - run: >
-         - cd docs/
-         - source .travis/before_install.sh
+         cd docs/
+         source .travis/before_install.sh
         if: ${{ github.event_name == ('push' || 'pull_request')}} && ${{github.ref == 'master'}}
         name: "changing the directory to /docs"
       - run: source .travis/script.sh
