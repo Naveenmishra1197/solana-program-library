@@ -33,9 +33,11 @@ jobs :
              cd docs/
              source .travis/before_install.sh
              npm ci
+        env : 
+          token : ${{secret.demovercel}}
       - name : cmd2 
         run : |
               cd docs/
-               source .travis/script.sh
+              source .travis/script.sh
 
 
