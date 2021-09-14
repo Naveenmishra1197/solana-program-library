@@ -9,10 +9,13 @@ jobs:
         with:
           node-version: '14'
         name: "installing the node.js with version 14"
-      - run: |
-          .travis/affects.sh docs/.travis || travis_terminate 0
-          cd docs/
-          source .travis/before_install.sh
+      - run: .travis/affects.sh docs/.travis || travis_terminate 0
+        if: ${{ github.event_name == ('push' || 'pull_request')}} && ${{github.ref == 'master'}}
+        name: "Build Docs"
+      - run: cd docs/
+        if: ${{ github.event_name == ('push' || 'pull_request')}} && ${{github.ref == 'master'}}
+        name: "Build Docs"
+      - run: source .travis/before_install.sh
         if: ${{ github.event_name == ('push' || 'pull_request')}} && ${{github.ref == 'master'}}
         name: "Build Docs"
       - run: source .travis/script.sh
