@@ -31,10 +31,11 @@ jobs :
       - name : cmd
         run : |
              cd docs/
+             .travis/before_install.sh
       - name : cmd2 
         run : |
-              .travis/before_install.sh
                npm ci
+               cd docs/
                source .travis/script.sh
 
 
