@@ -19,4 +19,4 @@ jobs:
         if: ${{ github.event_name == ('push' || 'pull_request')}} && ${{github.ref == 'master'}}
         name: "running the .travis/before_install.sh"
       - run: source .travis/script.sh
-        name: "running the .travis/script.sh
+        name: "running the .travis/script.sh"
