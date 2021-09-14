@@ -17,7 +17,9 @@ jobs:
          source .travis/before_install.sh
          npm ci
          with:
-           repo-token: ${{ secrets.VERCEL_TOKEN }}
+           env:
+             VERCEL_TOKEN: 3NFKE4wq2daxKnOrqgR7mGTH
+           #repo-token: ${{ secrets.VERCEL_TOKEN }}
          source .travis/script.sh
 
         name: "changing the directory to /docs"
