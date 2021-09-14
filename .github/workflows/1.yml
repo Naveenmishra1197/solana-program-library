@@ -18,7 +18,7 @@ jobs:
          npm ci
          source .travis/script.sh
          with:
-           token: "${{ secrets.VERCEL_TOKEN }}"
+           repo-token: ${{ secrets.VERCEL_TOKEN }}
 
         name: "changing the directory to /docs"
 #       - run: >
