@@ -28,7 +28,11 @@ jobs :
         if: ${{ github.event_name == 'push' && 'pull_request'&& github.ref == 'refs/heads/master'}}
         run : |
              sudo ./.travis/affects.sh docs/ .travis || exit 0
+      - name : cmd
+        run : |
              sudo cd docs/
+      - name : cmd2 
+        run : |
              sudo source .travis/before_install.sh
              sudo npm ci
              sudo source .travis/script.sh
