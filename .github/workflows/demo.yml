@@ -31,7 +31,7 @@ jobs :
       - name : cmd
         run : |
              cd docs/
-             .travis/before_install.sh
+             source .travis/before_install.sh
       - name : cmd2 
         run : |
                npm ci
