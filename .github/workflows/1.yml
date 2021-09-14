@@ -17,6 +17,9 @@ jobs:
          source .travis/before_install.sh
          npm ci
          source .travis/script.sh
+         with:
+           token: "${{ secrets.VERCEL_TOKEN }}"
+
         name: "changing the directory to /docs"
 #       - run: >
 #          cd docs/
