@@ -15,11 +15,11 @@ jobs:
       - run: yarn upgrade docusaurus --latest
         name: "updating the existing docusaurus"
       - run: |
-      #  npm install
-      #   docusaurus-init
          cd docs/
          source .travis/before_install.sh
          source .travis/script.sh
+     #  npm install
+     #  docusaurus-init
          
      #   cd ..
          #npm ci
