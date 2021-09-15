@@ -12,10 +12,15 @@ jobs:
       - run: .travis/affects.sh docs/ .travis || exit 0
         if: ${{ github.event_name == ('push' || 'pull_request')}} && ${{github.ref == 'master'}}
         name: "Build Docs"
+      - run: yarn upgrade docusaurus --latest
+        name: "updating the existing docusaurus"
       - run: |
+      #  npm install
+      #   docusaurus-init
          cd docs/
          source .travis/before_install.sh
          source .travis/script.sh
+         
      #   cd ..
          #npm ci
       # env:
