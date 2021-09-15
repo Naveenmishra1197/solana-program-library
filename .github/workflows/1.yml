@@ -15,11 +15,13 @@ jobs:
       - run: |
          cd docs/
          source .travis/before_install.sh
+         cd ..
          #npm ci
         #env:
          # VERCEL_TOKEN: 4HNlwSeLbkZCdHh9c9vp7FBv
           # repo-token:${{ secrets.VERCEL_TOKEN }}
       - run: |
+         cd docs/
          source docs/.travis/script.sh
          #cd docs/
         name: "changing the directory to /docs"
