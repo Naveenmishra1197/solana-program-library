@@ -15,10 +15,10 @@ jobs:
       - run: |
          cd docs/
          source .travis/before_install.sh
-         npm ci
-        env:
-          VERCEL_TOKEN: 4HNlwSeLbkZCdHh9c9vp7FBv
-           #repo-token:${{ secrets.VERCEL_TOKEN }}
+         #npm ci
+        #env:
+         # VERCEL_TOKEN: 4HNlwSeLbkZCdHh9c9vp7FBv
+          # repo-token:${{ secrets.VERCEL_TOKEN }}
       - run: |
          cd docs/
          source .travis/script.sh
