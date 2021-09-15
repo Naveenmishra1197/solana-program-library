@@ -22,7 +22,7 @@ yarn outdated docusaurus
 yarn upgrade docusaurus --latest
 #npm update docusaurus
 
-
+yarn install
 # Build from /src into /build
 yarn run build
 #npm run build
