@@ -6,7 +6,8 @@ cd "$(dirname "$0")"
 # shellcheck source=ci/env.sh
 source ../ci/env.sh
 
-npm install --global docusaurus-init
+yarn global add docusaurus-init
+#npm install --global docusaurus-init
 cd docusaurus/
 docusaurus-init
 
@@ -16,12 +17,15 @@ docusaurus-init
 
 # checking the current versiona and updating the docusaurus from the website directory
 cd ../website/
-npm outdated docusaurus
-npm update docusaurus
+yarn outdated docusaurus
+#npm outdated docusaurus
+yarn upgrade docusaurus --latest
+#npm update docusaurus
 
 
 # Build from /src into /build
-npm run build
+yarn run build
+#npm run build
 
 # Publish only from merge commits and release tags
 if [[ -n $CI ]]; then
