@@ -1,5 +1,4 @@
-
-name: node_js
+# name: node_js
 
 on:
   push:
@@ -11,11 +10,11 @@ on:
 #    notification :
 #                email: false
 
-  sh
+  
 jobs :
   build :
     name : mybuilddemo
-    runs-on: Ubuntu-latest
+    runs-on: ubuntu-latest 
     
     steps:
       - name: Checkout repository
@@ -32,4 +31,4 @@ jobs :
              sudo cd docs/
              sudo source .travis/before_install.sh
              sudo npm ci
-             sudo source .travis/script.
+             sudo source .travis/script.sh
