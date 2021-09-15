@@ -6,7 +6,7 @@ sudo apt-get install gcc g++ make
 
 npm install --global docusaurus-init
 docusaurus-init
-yarn install
+#yarn install
 #yarn upgrade docusaurus --latest
 npm update docusaurus
 
