@@ -15,7 +15,7 @@ docusaurus-init
 #npm run start
 
 # checking the current versiona and updating the docusaurus from the website directory
-source website
+cd website/
 npm outdated docusaurus
 npm update docusaurus
 
