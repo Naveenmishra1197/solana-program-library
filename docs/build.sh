@@ -7,6 +7,7 @@ cd "$(dirname "$0")"
 source ../ci/env.sh
 
 npm install --global docusaurus-init
+source docusaurus/
 docusaurus-init
 
 #Launching the server behind a proxy
