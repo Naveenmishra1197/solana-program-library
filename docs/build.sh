@@ -26,7 +26,6 @@ npm run build
 # Publish only from merge commits and release tags
 if [[ -n $CI ]]; then
   if [[ -z $CI_PULL_REQUEST ]]; then
-    cd ..
-    ./publish-docs.sh
+    ../../publish-docs.sh
   fi
 fi
