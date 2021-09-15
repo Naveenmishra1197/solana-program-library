@@ -24,7 +24,7 @@ yarn upgrade docusaurus --latest
 
 yarn install
 # Build from /src into /build
-yarn run build
+yarn build
 #npm run build
 
 # Publish only from merge commits and release tags
