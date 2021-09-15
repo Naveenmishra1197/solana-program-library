@@ -22,7 +22,7 @@ jobs:
           # repo-token:${{ secrets.VERCEL_TOKEN }}
       - run: |
          cd docs/
-         source docs/.travis/script.sh
+         source ./.travis/script.sh
          #cd docs/
         name: "changing the directory to /docs"
 #       - run: >
