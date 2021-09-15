@@ -11,8 +11,8 @@ cd docusaurus/
 docusaurus-init
 
 #Launching the server behind a proxy
-SET NO_PROXY=localhost
-npm run start
+#SET NO_PROXY=localhost
+#npm run start
 
 # checking the current versiona and updating the docusaurus from the website directory
 source website
