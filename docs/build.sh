@@ -6,6 +6,19 @@ cd "$(dirname "$0")"
 # shellcheck source=ci/env.sh
 source ../ci/env.sh
 
+npm install --global docusaurus-init
+docusaurus-init
+
+#Launching the server behind a proxy
+SET NO_PROXY=localhost
+npm run start
+
+# checking the current versiona and updating the docusaurus from the website directory
+source website
+npm outdated docusaurus
+npm update docusaurus
+
+
 # Build from /src into /build
 npm run build
 
