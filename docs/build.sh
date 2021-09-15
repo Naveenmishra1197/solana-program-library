@@ -10,13 +10,15 @@ yarn global add docusaurus-init
 #npm install --global docusaurus-init
 cd docusaurus/
 docusaurus-init
+cd ./website
+yarn start
 
 #Launching the server behind a proxy
 #SET NO_PROXY=localhost
 #npm run start
 
 # checking the current versiona and updating the docusaurus from the website directory
-cd ../website/
+cd ../../website/
 yarn outdated docusaurus
 #npm outdated docusaurus
 yarn upgrade docusaurus --latest
