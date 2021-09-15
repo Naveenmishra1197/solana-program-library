@@ -10,8 +10,10 @@ yarn global add docusaurus-init
 #npm install --global docusaurus-init
 cd docusaurus/
 docusaurus-init
-cd ./website
-yarn start
+mv docs-examples-from-docusaurus docs
+
+#cd ./website
+#yarn start
 
 #Launching the server behind a proxy
 #SET NO_PROXY=localhost
