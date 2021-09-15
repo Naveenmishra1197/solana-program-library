@@ -20,9 +20,8 @@ jobs:
          # VERCEL_TOKEN: 4HNlwSeLbkZCdHh9c9vp7FBv
           # repo-token:${{ secrets.VERCEL_TOKEN }}
       - run: |
-         cd docs/
          source .travis/script.sh
-
+         #cd docs/
         name: "changing the directory to /docs"
 #       - run: >
 #          cd docs/
