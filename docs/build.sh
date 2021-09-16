@@ -12,7 +12,7 @@ cd docusaurus/
 docusaurus-init
 
 ls
-mv docs-examples-from-docusaurus docs
+#mv docs-examples-from-docusaurus docs
 
 #cd ./website
 #yarn start
@@ -20,9 +20,12 @@ mv docs-examples-from-docusaurus docs
 #Launching the server behind a proxy
 #SET NO_PROXY=localhost
 #npm run start
-
+ls ../
+ls ../../
 # checking the current versiona and updating the docusaurus from the website directory
 cd ../../website/
+ls
+ 
 yarn outdated docusaurus
 #npm outdated docusaurus
 yarn upgrade docusaurus --latest
