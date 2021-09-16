@@ -62,6 +62,15 @@ module.exports = {
       style: "dark",
       links: [
         {
+          title: "Docs",
+          items: [
+            {
+              label: "Introduction",
+              href: "https://docs.solana.com/introduction",
+            },
+          ],
+        },
+        {
           title: "Community",
           items: [
             {
