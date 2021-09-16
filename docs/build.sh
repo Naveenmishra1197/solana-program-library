@@ -30,11 +30,13 @@ yarn outdated docusaurus
 #npm outdated docusaurus
 yarn upgrade docusaurus --latest
 #npm update docusaurus
+ls
 
 yarn install
 # Build from /src into /build
 yarn build
 #npm run build
+ls
 
 # Publish only from merge commits and release tags
 if [[ -n $CI ]]; then
