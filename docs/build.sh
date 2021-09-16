@@ -10,6 +10,7 @@ yarn global add docusaurus-init
 #npm install --global docusaurus-init
 cd docusaurus/
 docusaurus-init
+
 mv docs-examples-from-docusaurus docs
 
 #cd ./website
