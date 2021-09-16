@@ -6,9 +6,11 @@ cd "$(dirname "$0")"
 # shellcheck source=ci/env.sh
 source ../ci/env.sh
 
-yarn global add docusaurus-init
+yarn global add docusaurus-init 
+ls
 #npm install --global docusaurus-init
 cd docusaurus/
+ls
 docusaurus-init
 
 ls
