@@ -11,6 +11,7 @@ yarn global add docusaurus-init
 cd docusaurus/
 docusaurus-init
 
+ls
 mv docs-examples-from-docusaurus docs
 
 #cd ./website
