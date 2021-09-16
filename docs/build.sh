@@ -46,6 +46,6 @@ if [[ -n $CI ]]; then
   echo "cheking the CI is not null or not"
   if [[ -z $CI_PULL_REQUEST ]]; then
     echo "checking the CI_PULL_REQUEST value is zero or not"
-    ../publish-docs.sh
+    publish-docs.sh
   fi
 fi
