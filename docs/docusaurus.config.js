@@ -39,8 +39,15 @@ module.exports = {
           docId: 'introduction',
           label: 'Docs',
           },
+//         {
+//           to: 'blog', label: 'Blog', position: 'left'
+//         },
         {
-          to: 'blog', label: 'Blog', position: 'left'},
+          href: 'https://github.com/singhritesh750/solana-program-library',
+          position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
+        },
         {
           type: 'docsVersionDropdown',
           position: 'right',
@@ -49,34 +56,28 @@ module.exports = {
           type: 'localeDropdown',
           position: 'right',
         },
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          position: 'right',
-          className: 'header-github-link',
-          'aria-label': 'GitHub repository',
-        },
       ],
     },
     footer: {
       style: "dark",
       links: [
-        {
-          title: "Community",
-          items: [
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/pquxPsq",
-            },
-            {
-              label: "Twitter",
-              href: "https://twitter.com/solana",
-            },
-            {
-              label: "Forums",
-              href: "https://forums.solana.com",
-            },
-          ],
-        },
+//         {
+//           title: "Community",
+//           items: [
+//             {
+//               label: "Discord",
+//               href: "https://discordapp.com/invite/pquxPsq",
+//             },
+//             {
+//               label: "Twitter",
+//               href: "https://twitter.com/solana",
+//             },
+//             {
+//               label: "Forums",
+//               href: "https://forums.solana.com",
+//             },
+//           ],
+//         },
         {
           title: "More",
           items: [
