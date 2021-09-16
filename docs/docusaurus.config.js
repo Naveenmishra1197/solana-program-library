@@ -5,7 +5,7 @@ module.exports = {
   url: "https://spl.solana.com",
   baseUrl: "/",
   favicon: "img/favicon.ico",
-  organizationName: "solana-labs", // Usually your GitHub org/user name.
+  organizationName: "singhritesh750", // Usually your GitHub org/user name.
   projectName: "solana-program-library", // Usually your repo name.
   themeConfig: {
     navbar: {
@@ -15,19 +15,19 @@ module.exports = {
         srcDark: "img/logo-horizontal-dark.svg",
       },
       links: [
-        {
-          href: "https://docs.solana.com/",
-          label: "Docs »",
-          position: "left",
-        },
-        {
-          href: "https://discordapp.com/invite/pquxPsq",
-          label: "Chat",
-          position: "right",
-        },
+//         {
+//           href: "https://docs.solana.com/",
+//           label: "Docs »",
+//           position: "left",
+//         },
+//         {
+//           href: "https://discordapp.com/invite/pquxPsq",
+//           label: "Chat",
+//           position: "right",
+//         },
 
         {
-          href: "https://github.com/solana-labs/solana-program-library",
+          href: "https://github.com/singhritesh750/solana-program-library",
           label: "GitHub",
           position: "right",
         },
