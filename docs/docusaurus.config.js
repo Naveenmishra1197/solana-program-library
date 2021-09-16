@@ -58,7 +58,7 @@ module.exports = {
           items: [
             {
               label: "GitHub",
-              href: "https://github.com/solana-labs/solana-program-library",
+              href: "https://github.com/singhritesh750/solana-program-library",
             },
           ],
         },
