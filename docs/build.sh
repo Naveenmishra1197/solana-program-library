@@ -27,7 +27,8 @@ ls ../../
 # checking the current versiona and updating the docusaurus from the website directory
 cd ../website
 ls
- 
+
+cd ../../
 yarn outdated docusaurus
 #npm outdated docusaurus
 yarn upgrade docusaurus --latest
