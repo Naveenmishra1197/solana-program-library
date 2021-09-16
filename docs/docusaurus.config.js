@@ -61,29 +61,29 @@ module.exports = {
     footer: {
       style: "dark",
       links: [
-//         {
-//           title: "Community",
-//           items: [
-//             {
-//               label: "Discord",
-//               href: "https://discordapp.com/invite/pquxPsq",
-//             },
-//             {
-//               label: "Twitter",
-//               href: "https://twitter.com/solana",
-//             },
-//             {
-//               label: "Forums",
-//               href: "https://forums.solana.com",
-//             },
-//           ],
-//         },
+        {
+          title: "Community",
+          items: [
+            {
+              label: "Discord",
+              href: "https://discordapp.com/invite/pquxPsq",
+            },
+            {
+              label: "Twitter",
+              href: "https://twitter.com/solana",
+            },
+            {
+              label: "Forums",
+              href: "https://forums.solana.com",
+            },
+          ],
+        },
         {
           title: "More",
           items: [
             {
               label: "GitHub",
-              href: "https://github.com/singhritesh750/solana-program-library",
+              href: "https://github.com/solana-labs/solana-program-library",
             },
           ],
         },
