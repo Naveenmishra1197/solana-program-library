@@ -28,7 +28,7 @@ ls ../../
 cd ../website
 ls
 
-cd ../
+cd ../../
 yarn outdated docusaurus
 #npm outdated docusaurus
 yarn upgrade docusaurus --latest
