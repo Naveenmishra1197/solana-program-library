@@ -14,7 +14,7 @@ on:
 jobs :
   build :
     name : mybuilddemo
-    runs-on: ubuntu-latest 
+    runs-on: Ubuntu-latest
     
     steps:
       - name: Checkout repository
@@ -28,16 +28,9 @@ jobs :
         if: ${{ github.event_name == 'push' && 'pull_request'&& github.ref == 'refs/heads/master'}}
         run : |
              sudo ./.travis/affects.sh docs/ .travis || exit 0
-      - name : cmd
-        run : |
-             cd docs/
-             source .travis/before_install.sh
-             npm ci
-        env : 
-          token : ${{secret.demovercel}}
-      - name : cmd2 
-        run : |
-              cd docs/
-              source .travis/script.sh
+             sudo cd docs/
+             sudo source .travis/before_install.sh
+             sudo npm ci
+             sudo source .travis/script.sh
 
 
