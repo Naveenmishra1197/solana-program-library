@@ -6,6 +6,12 @@ if [[ -d .vercel ]]; then
   rm -r .vercel
 fi
 
+ls
+pwd
+ls ../
+pwd 
+ls ../../
+
 CONFIG_FILE=vercel.json
 PROJECT_NAME=solana-program-library
 
