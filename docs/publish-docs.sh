@@ -13,6 +13,12 @@ pwd
 ls ../../
 
 CONFIG_FILE=vercel.json
+
+cat "vercel.json"
+cat vercel.json
+cat > vercel.json
+cat > vercel.json <<EOF
+
 PROJECT_NAME=solana-program-library
 
 PRODUCTION=
