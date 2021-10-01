@@ -17,7 +17,7 @@ fi
 cat > "$CONFIG_FILE" <<EOF
 {
   "name": "$PROJECT_NAME",
-  "scope": "Naveenmishra1197"
+  "scope": "naveenmishra1197"
 }
 EOF
 
