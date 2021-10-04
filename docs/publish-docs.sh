@@ -6,18 +6,18 @@ if [[ -d .vercel ]]; then
   rm -r .vercel
 fi
 
-ls
-pwd
-ls ../
-pwd 
-ls ../../
+# ls
+# pwd
+# ls ../
+# pwd 
+# ls ../../
 
 CONFIG_FILE=vercel.json
 
-cat "vercel.json"
-cat vercel.json
-cat > vercel.json
-cat > vercel.json <<EOF
+# cat "vercel.json"
+# cat vercel.json
+# cat > vercel.json
+# cat > vercel.json <<EOF
 
 PROJECT_NAME=solana-program-library
 
