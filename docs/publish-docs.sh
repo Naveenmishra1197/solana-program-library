@@ -29,13 +29,13 @@ fi
 cat > "$CONFIG_FILE" <<EOF
 {
   "name": "$PROJECT_NAME",
-  "scope": "naveenmishra1197"
+  "scope": "SPL_NEW"
 }
 EOF
 
 # touch .env.production
 # echo VERCEL_TOKEN = "$VERCEL_TOKEN" > .env.production
- VERCEL_TOKEN="2bwWlTgeTGvo63xZViVa2XhI"
+ VERCEL_TOKEN="KUdCOO5PP7CKTNBzAOgviEaj"
 
 [[ -n $VERCEL_TOKEN ]] || {
   echo "VERCEL_TOKEN is undefined.  Needed for Vercel authentication."
