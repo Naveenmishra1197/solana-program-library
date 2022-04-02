@@ -1,5 +1,5 @@
 
-name : spl
+name : SPL
 on:
   push:
     branches:  [master]
