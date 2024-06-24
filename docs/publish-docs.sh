@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+
 set -ex
 
 if [[ -d .vercel ]]; then
